@@ -1,11 +1,11 @@
-// UIViewController Lifecycle
+// UIViewController View Lifecycle
 // Placeholders for all of the view controller lifecycle methods
 // 
 // Platform: iOS
 // Language: Objective-C
 // Completion Scope: Class Implementation
 
-#pragma mark - UIViewController
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,9 +24,13 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-	[super viewWillDisappear:animated];
+    [super viewWillDisappear:animated];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
-	[super viewDidDisappear:animated];
+    [super viewDidDisappear:animated];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
