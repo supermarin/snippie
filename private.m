@@ -6,5 +6,5 @@
 // Completion Scope: Top Level
 
 @interface <#Class Name#> ()
-<#Continuation#>
+- (<#type#>)<#method name#>;
 @end
