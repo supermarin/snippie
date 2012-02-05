@@ -1,4 +1,4 @@
-// KVO Setter
+// KVC Setter override
 // Use when overriding @synthesized property setter methods
 //
 // Platform: All
