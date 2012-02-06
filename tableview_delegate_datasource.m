@@ -7,6 +7,10 @@
 
 #pragma mark - Tableview delegate
 
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+     
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     <#action after pressing on the cell#>
 }
