@@ -1,14 +1,14 @@
-// UITableViewDelegate and UITableViewDatasource
-// Placeholders for the core table view delegate and datasource methods
-// 
-// Platform: iOS
-// Language: Objective-C
-// Completion Scope: Class Implementation
+//UITableView delegate and datasource default methods
+//Used when adding an tableView in existing controller
+//
+//Completion scopes: ["ClassImplementation"]
+//
+Copy / Paste in Xcode:
 
 #pragma mark - Tableview delegate
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-     
+ 
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -25,7 +25,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:<#(UITableViewCellStyle)#> reuseIdentifier:CellIdentifier];
     }
-    
+    [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 

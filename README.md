@@ -1,4 +1,4 @@
-# Xcode Snippets Backup / Export / Import tool
+# Xcode Snippets Backup / Import tool
 
 Feel free to fork, so you can export your own snippets and have them stored in your own repo.
 Below is auto-generated 'cheat-sheet' for your own exported snippets.
@@ -7,12 +7,12 @@ Below is auto-generated 'cheat-sheet' for your own exported snippets.
 
 You can save the repository anywhere you want.
 ```
-$ git clone git@github.com:mneorr/Xcode-Snippets.git
+git clone git@github.com:mneorr/Xcode-Snippets.git
 
-$ bundle install
+bundle install
 ```
 
-### Backing up your own snippets from Xcode
+### Backing up your own snippets once you're satisfied
 ```
 $ rake backup
 ```
@@ -25,6 +25,9 @@ And, it will re-create the readme file, and the cheat-sheet below.
 ```
 $ rake import
 ```
+
+
+### Cheat Sheet
 		
 * Delegate pragma mark - `delpragma`
 * Release object - `release`

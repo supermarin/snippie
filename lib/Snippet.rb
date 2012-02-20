@@ -31,5 +31,9 @@ class Snippet
   def summary
     value_for_key "IDECodeSnippetSummary"
   end
+
+  def completion_scopes
+    value_for_key "IDECodeSnippetCompletionScopes"
+  end
   
 end
