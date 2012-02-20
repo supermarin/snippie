@@ -1,12 +1,43 @@
-# Xcode Snippets
+# Xcode Snippets Backup / Export / Import tool
 
-Just a few code snippets I have in my Xcode arsenal. In [dotfiles](http://dotfiles.org/) fashion, I thought it'd be cool to put these out in the ether.
+Feel free to fork, so you can export your own snippets and have them stored in your own repo.
+Below is auto-generated 'cheat-sheet' for your own exported snippets.
 
-## Using Snippets
+### Installation
 
-In Xcode 4, open a workspace and toggle the right sidebar to be visible. On the bottom, there is a panel with four icons in the header. Click on the `{ }` icon to open the Code Snippets Library.
+You can save the repository anywhere you want.
+```
+$ git clone git@github.com:mneorr/Xcode-Snippets.git
 
-Now copy-paste the code from one of these snippets, highlight the code block you just pasted and drag it to the Code Snippet panel. Make sure to match the suggested platform, language, and completion scope.
+$ bundle install
+```
 
-It is on you to name your snippet trigger :)
-e.g.  swf - can be used to trigger String With Format
+### Backing up your own snippets from Xcode
+```
+$ rake backup
+```
+Notice that this will clear the old ones, and put a fresh copy in the BACKUP dir.
+It will generate readable snippets in the SNIPPETS dir.
+And, it will re-create the readme file, and the cheat-sheet below.
+
+
+### Importing
+```
+$ rake import
+```
+		
+* Delegate pragma mark - `delpragma`
+* Release object - `release`
+* Pragma Mark - `mark`
+* Better Initializer - `init`
+* NSLog - `log`
+* @Synthesizer with _prefix - `psynth`
+* Private Category - `privcat`
+* View Did Load - `vdl`
+* Value for key - `vfk`
+* NSString with format - `swf`
+* UIViewController pragma marks - `conpragmas`
+* Singleton - `singleton`
+* UITableView delegate and datasource default methods - `delDat`
+* Method declaration - `method`
+* Void method declaration - `void`

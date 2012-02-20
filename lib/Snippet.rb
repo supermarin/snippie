@@ -1,3 +1,5 @@
+#Credits to burtlo/xcode-snippets for this great implementation
+
 require 'nokogiri-plist'
 
 class Snippet

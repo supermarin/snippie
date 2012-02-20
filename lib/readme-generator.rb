@@ -2,53 +2,71 @@ require 'fileutils'
 
 class ReadmeGenerator
 	
-	def initialize
+	def initialize(snippets)		
+		Dir.chdir("../")
+
 		@README_FILENAME = 'README.md'
+		@snippets = snippets
 	end
 
-	def generate
-
-		snippets = Dir['*.codesnippet'].map do |snippet_file|
-			snippet = Snippet.parse(File.read(snippet_file))
+	def self.generate(snippets)
+		generator = self.new(snippets)
+		generator.delete_old_readme
+		generator.create_readme
+	end
+	
+	def formatted_snippets
+		@snippets.map do |snippet|
+			[ "* #{snippet.title} - `#{snippet.shortcut}`" ]
 		end
+	end
 
-		grouped_snippets = snippets.group_by {|snippet| snippet.summary }
-
-
-		group_output = grouped_snippets.map do |summary,snippets|
-
-			group_title = [ "", "####{summary}", "" ]
-
-			group_snippets_output = snippets.map do |snippet|
-				[ "* #{snippet.title} - `#{snippet.shortcut}`" ]
-			end
-
-			group_title + group_snippets_output
-		end    
-
-		readme_title = %{# Xcode Code Snippets
-
-			### Installation
-
-			```
-			cd ~/Library/Developer/Xcode/UserData/CodeSnippets/
-			git init
-			git remote add burtlo git@github.com:burtlo/xcode-snippets.git
-			git pull burtlo master
-			```
-		}
-
-
-		# Generate an markdown doc
-
-		File.open 'README.md', 'w' do |file|
+	def create_readme
+		File.open @README_FILENAME, 'w' do |file|
 			file.puts readme_title
-			file.puts group_output.join("\n")
+			file.puts formatted_snippets.join("\n")
 		end
-
 	end
 	
 	def delete_old_readme
 		FileUtils.rm_f %w( README.md )
 	end
+
+
+
+	def readme_title
+		%{# Xcode Snippets Backup / Export / Import tool
+
+Feel free to fork, so you can export your own snippets and have them stored in your own repo.
+Below is auto-generated 'cheat-sheet' for your own exported snippets.
+
+### Installation
+
+You can save the repository anywhere you want.
+```
+git clone git@github.com:mneorr/Xcode-Snippets.git
+
+bundle install
+```
+
+### Backing up your own snippets once you're satisfied
+```
+$ rake backup
+```
+Notice that this will clear the old ones, and put a fresh copy in the BACKUP dir.
+It will generate readable snippets in the SNIPPETS dir.
+And, it will re-create the readme file, and the cheat-sheet below.
+
+
+### Importing
+```
+$ rake import
+```
+
+
+### Cheat Sheet
+		}
+
+	end
+
 end
