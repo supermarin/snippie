@@ -50,8 +50,8 @@ You can save the repository wherever you want.
 ### Backing up your own snippets once you're satisfied
 `$ rake backup`
 <br>
-Notice that this will clear the old ones, and put a fresh copy in the BACKUP dir.
-It will generate readable snippets in the SNIPPETS dir.
+Notice that this will clear the old ones, and put a fresh copy in the `./backup` dir.
+It will generate readable snippets in the `./readable_snippets` dir.
 And, it will re-create the readme file, and the cheat-sheet below.
 
 
