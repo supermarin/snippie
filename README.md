@@ -6,21 +6,25 @@ Below is the auto-generated cheat-sheet from your own exported snippets.
 It's created every time you back up your snippets and push to git.
 
 ### Installation
-You can save the repository wherever you want. 
-<br>
-`$ git clone git@github.com:mneorr/xcode-snippets-manager.git`
-<br>
+Fork the repository, to be able to export your own snippets and cheat-sheet. <br>
+You can save the repository wherever you want. <br>
+`$ git clone git@github.com:mneorr/xcode-snippets-manager.git xcode-snippets` <br>
+`$ cd xcode-snippets` <br>
 `$ bundle install`
 
-### Backing up your own snippets once you're satisfied
-`$ rake backup`
-<br>
-Notice that this will clear the old ones, and put a fresh copy in the `./backup` dir.
-It will generate readable snippets in the `./readable_snippets` dir.
+### Standard usage
+``$ rake backup`` <br>
+This will clear my snippets, and put yours in the repository.
+
+It will also generate readable snippets in the `readable_snippets` dir.
 And, it will re-create the readme file, and the cheat-sheet below.
 
+After you do backup, `commit` and `push`, and you should have your fork up and ready.
+The cheat-sheet will be updated as well.
 
-### Importing
+
+### Import
+##### to your other computers, or a new OS installation
 The simplest thing you can do is:
 <br>
 `$ rake import`
