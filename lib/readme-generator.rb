@@ -33,7 +33,7 @@ class ReadmeGenerator
 
 
 	def readme_title
-		%{# Xcode Snippets Backup / Import tool w/ cheat-sheet
+		%{# Snippets Backup / Restore & cheat-sheet
 
 Feel free to fork, so you can export your own snippets and have them stored in your own repo.
 Below is the auto-generated cheat-sheet from your own exported snippets.
