@@ -33,10 +33,11 @@ class ReadmeGenerator
 
 
 	def readme_title
-		%{# Xcode Snippets Backup / Import tool
+		%{# Xcode Snippets Backup / Import tool w/ cheat-sheet
 
 Feel free to fork, so you can export your own snippets and have them stored in your own repo.
-Below is auto-generated 'cheat-sheet' for your own exported snippets.
+Below is the auto-generated cheat-sheet from your own exported snippets.
+It's created every time you back up your snippets and push to git.
 
 ### Installation
 
@@ -60,7 +61,7 @@ The simplest thing you can do is:
 ```
 $ rake import
 ```
-It shuold not duplicate the same snippets.
+It should not duplicate the same snippets.
 
 However, if you want to clear the existing snippets, and use the fresh ones, you may want to use
 ```
