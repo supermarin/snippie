@@ -26,8 +26,8 @@ def generate_readme
 end
 
 def backup_files
-  FileUtils.rm_rf 'backup'
-  FileUtils.cp_r LIBRARY_SNIPPETS_DIR, 'backup'
+  FileUtils.rm_rf BACKUP_DIR
+  FileUtils.cp_r LIBRARY_SNIPPETS_DIR, BACKUP_DIR
   # puts "#{Dir.entries(LIBRARY_SNIPPETS_DIR).count} snippets backed up."
 end
 
@@ -39,18 +39,25 @@ def generate_readable_snippets
   ReadableSnippetsGenerator.generate raw_snippets
 end
 
+def copy_snippets_to_xcode
+    FileUtils.cp_r "#{BACKUP_DIR}/.", LIBRARY_SNIPPETS_DIR
+end
+
 task :backup do
   backup_files
   generate_readable_snippets
   generate_readme
+
+  puts 'You have successfully backed up your snippets! Raw snippets are in '
 end
 
 task :clean_import do
-  FileUtils.rm_f "#{LIBRARY_SNIPPETS_DIR}/*"
-  import
+  FileUtils.rm_rf "#{LIBRARY_SNIPPETS_DIR}/."
+  copy_snippets_to_xcode
 end
 
 task :import do
-  FileUtils.cp_r "#{BACKUP_DIR}/.", LIBRARY_SNIPPETS_DIR
-  `echo 'You have successfully imported your snippets in the Xcode'`
+  copy_snippets_to_xcode
+  puts 'You have successfully imported your snippets in the Xcode. 
+Please re-start Xcode to see the them :)'
 end
