@@ -48,7 +48,8 @@ task :backup do
   generate_readable_snippets
   generate_readme
 
-  puts 'You have successfully backed up your snippets! Raw snippets are in '
+  puts 'You have successfully backed up your snippets! Readable snippets are in ./readable_snippets folder.
+Commit / Push to see your new cheatsheet :)'
 end
 
 task :clean_import do

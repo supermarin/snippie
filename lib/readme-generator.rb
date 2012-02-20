@@ -44,9 +44,8 @@ Below is auto-generated 'cheat-sheet' for your own exported snippets.
 
 You can save the repository anywhere you want.
 ```
-git clone git@github.com:mneorr/Xcode-Snippets.git
-
-bundle install
+$ git clone git@github.com:mneorr/Xcode-Snippets.git
+$ bundle install
 ```
 
 ### Backing up your own snippets once you're satisfied
@@ -64,7 +63,7 @@ $ rake import
 ```
 
 
-### Cheat Sheet
+## Cheat Sheet
 		}
 
 	end

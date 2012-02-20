@@ -8,7 +8,6 @@ Below is auto-generated 'cheat-sheet' for your own exported snippets.
 You can save the repository anywhere you want.
 ```
 git clone git@github.com:mneorr/Xcode-Snippets.git
-
 bundle install
 ```
 
