@@ -7,8 +7,8 @@ Below is auto-generated 'cheat-sheet' for your own exported snippets.
 
 You can save the repository anywhere you want.
 ```
-git clone git@github.com:mneorr/Xcode-Snippets.git
-bundle install
+$ git clone git@github.com:mneorr/Xcode-Snippets.git
+$ bundle install
 ```
 
 ### Backing up your own snippets once you're satisfied
@@ -21,12 +21,20 @@ And, it will re-create the readme file, and the cheat-sheet below.
 
 
 ### Importing
+The simplest thing you can do is:
 ```
 $ rake import
 ```
+It shuold not duplicate the same snippets.
+
+However, if you want to clear the existing snippets, and use the fresh ones,
+```
+$ rake clean_import
+```
+is for you.
 
 
-### Cheat Sheet
+## Cheat Sheet
 		
 * Delegate pragma mark - `delpragma`
 * Release object - `release`

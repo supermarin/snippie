@@ -3,8 +3,6 @@ require 'fileutils'
 class ReadmeGenerator
 	
 	def initialize(snippets)		
-		Dir.chdir("../")
-
 		@README_FILENAME = 'README.md'
 		@snippets = snippets
 	end
