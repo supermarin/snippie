@@ -14,7 +14,7 @@ class ReadableSnippetsGenerator
 		puts @snippets
 		@snippets.map do |snippet|
 			{ 	
-				:filename => snippet.title,
+				:filename => friendly_filename(snippet.title),
 				:content => [
 					"//#{snippet.title}\n" <<
 					"//#{snippet.summary}\n" <<
@@ -29,7 +29,7 @@ class ReadableSnippetsGenerator
 	end
 
 	def save_snippet(formatted_snippet)
-		File.open "#{friendly_filename(formatted_snippet[:filename])}.m", 'w' do |file|
+		File.open "#{formatted_snippet[:filename]}.m", 'w' do |file|
 			file.puts formatted_snippet[:content]
 		end
 	end
