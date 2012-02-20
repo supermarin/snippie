@@ -6,13 +6,15 @@ It's created every time you back up your snippets and push to git.
 
 ### Installation
 
-You can save the repository anywhere you want.
+You can save the repository wherever you want.
+
 ```
 $ git clone git@github.com:mneorr/Xcode-Snippets.git
 $ bundle install
 ```
 
 ### Backing up your own snippets once you're satisfied
+
 ```
 $ rake backup
 ```
@@ -23,12 +25,14 @@ And, it will re-create the readme file, and the cheat-sheet below.
 
 ### Importing
 The simplest thing you can do is:
+
 ```
 $ rake import
 ```
 It should not duplicate the same snippets.
 
 However, if you want to clear the existing snippets, and use the fresh ones, you may want to use
+
 ```
 $ rake clean_import
 ```
@@ -39,6 +43,7 @@ $ rake clean_import
 		
 * Delegate pragma mark - `delpragma`
 * Release object - `release`
+* View did dissapear - `vdd`
 * Pragma Mark - `mark`
 * Better Initializer - `init`
 * NSLog - `log`
@@ -46,6 +51,7 @@ $ rake clean_import
 * Private Category - `privcat`
 * View Did Load - `vdl`
 * Value for key - `vfk`
+* View Did Appear - `vda`
 * NSString with format - `swf`
 * UIViewController pragma marks - `conpragmas`
 * Singleton - `singleton`
