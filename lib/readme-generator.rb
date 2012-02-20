@@ -43,7 +43,7 @@ It's created every time you back up your snippets and push to git.
 ### Installation
 You can save the repository wherever you want. 
 <br>
-`$ git clone git@github.com:mneorr/Xcode-Snippets.git`
+`$ git clone git@github.com:mneorr/xcode-snippets-manager.git`
 <br>
 `$ bundle install`
 
