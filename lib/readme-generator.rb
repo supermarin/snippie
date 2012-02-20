@@ -58,9 +58,17 @@ And, it will re-create the readme file, and the cheat-sheet below.
 
 
 ### Importing
+The simplest thing you can do is:
 ```
 $ rake import
 ```
+It shuold not duplicate the same snippets.
+
+However, if you want to clear the existing snippets, and use the fresh ones,
+```
+$ rake clean_import
+```
+is for you.
 
 
 ## Cheat Sheet
