@@ -62,11 +62,11 @@ $ rake import
 ```
 It shuold not duplicate the same snippets.
 
-However, if you want to clear the existing snippets, and use the fresh ones,
+However, if you want to clear the existing snippets, and use the fresh ones, you may want to use
 ```
 $ rake clean_import
 ```
-is for you.
+
 
 
 ## Cheat Sheet
