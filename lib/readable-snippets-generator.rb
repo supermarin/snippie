@@ -1,17 +1,19 @@
 class ReadableSnippetsGenerator
 
 	def initialize(snippets)
-		Dir.chdir('readable_snippets')		
 		@snippets = snippets
 	end
 
 	def self.generate(snippets)
+		Dir.chdir('readable_snippets')		
+		
 		generator = self.new(snippets)
 		generator.save_files
+
+		Dir.chdir('../')		
 	end
 	
 	def formatted_snippets
-		puts @snippets
 		@snippets.map do |snippet|
 			{ 	
 				:filename => friendly_filename(snippet.title),
