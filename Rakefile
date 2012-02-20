@@ -52,6 +52,7 @@ task :backup do
 end
 
 task :clean_import do
+  FileUtils.cp_r "#{LIBRARY_SNIPPETS_DIR}/." , "#{Dir.home}/Desktop/OLD-snippets-backup"
   FileUtils.rm_rf "#{LIBRARY_SNIPPETS_DIR}/."
   copy_snippets_to_xcode
 end
