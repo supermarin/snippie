@@ -57,7 +57,6 @@ And, it will re-create the this file.
 After you do backup, `commit` and `push`, and you should have your fork up and ready.
 The cheat-sheet will be updated as well.
 
-
 ### Import
 ##### to your other computers, or a new OS installation
 The simplest thing you can do is:
