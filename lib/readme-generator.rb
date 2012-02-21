@@ -35,7 +35,7 @@ class ReadmeGenerator
 	def readme_title
 		%{# Snippets backup-import & Cheatsheet generator
 #### For Xcode.
-You can browse snippets from my xcode-arsenal in the __readable_snippets__ directory above.
+You can __browse snippets__ from my xcode-arsenal in the __readable_snippets__ directory above.
 
 Below is the auto-generated cheat-sheet from your own exported snippets.
 It's created every time you back up your snippets and push to git.
