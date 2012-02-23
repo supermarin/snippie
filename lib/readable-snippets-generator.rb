@@ -7,8 +7,7 @@ class ReadableSnippetsGenerator
 	def self.generate(snippets)
 		Dir.chdir('readable_snippets')		
 		
-		generator = self.new(snippets)
-		generator.save_files
+		self.new(snippets).save_files
 
 		Dir.chdir('../')		
 	end
@@ -44,7 +43,7 @@ class ReadableSnippetsGenerator
 
 	def friendly_filename(filename)
 		filename.gsub(/[^\w\s_-]+/, '')
-		.gsub(/(^|\b\s)\s+($|\s?\b)/, '\\1\\2')
-		.gsub(/\s/, '_')
+				.gsub(/(^|\b\s)\s+($|\s?\b)/, '\\1\\2')
+				.gsub(/\s/, '_')
 	end
 end
