@@ -17,7 +17,7 @@ You can save the repository wherever you want. <br>
 This will clear my snippets, and put yours in the repository.
 
 It will also generate readable snippets in the __readable_snippets__ dir.
-And, it will re-create the this file.
+And, it will re-create this file.
 
 After you do backup, `commit` and `push`, and you should have your fork up and ready.
 The cheat-sheet will be updated as well.
