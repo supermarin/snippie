@@ -1,7 +1,7 @@
 //Void method declaration
 //Quickly declare a void method
 //
-//Completion scopes: ["ClassImplementation"]
+//Completion scopes: ["ClassInterfaceMethods", "ClassImplementation"]
 //
 Copy / Paste in Xcode:
 

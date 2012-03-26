@@ -5,4 +5,4 @@
 //
 Copy / Paste in Xcode:
 
-NSLog(@"<#your text and %@'s here#>", <#variables here#>);
+NSLog(@"<# your text here #> %@", <#variables here#>);

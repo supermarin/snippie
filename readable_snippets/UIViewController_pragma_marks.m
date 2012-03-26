@@ -8,14 +8,15 @@ Copy / Paste in Xcode:
 #pragma mark - Private
 
 
-#pragma mark - Public
-
 
 #pragma mark - View lifecycle
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+
+#pragma mark - Public
 
 
 #pragma mark - IBActions
