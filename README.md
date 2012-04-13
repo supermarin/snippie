@@ -40,8 +40,10 @@ However, if you want to clear the existing snippets, and use the fresh ones, you
 * Delegate pragma mark - `delpragma`
 * Release object - `release`
 * View did dissapear - `vdd`
+* View Will Dissappear - `vwd`
 * Pragma Mark - `mark`
 * Better Initializer - `init`
+* View Will Appear - `vwa`
 * NSLog - `log`
 * @Synthesizer with _prefix - `psynth`
 * Private Category - `privcat`
