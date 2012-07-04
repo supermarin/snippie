@@ -5,4 +5,4 @@
 //
 Copy / Paste in Xcode:
 
-[<#object#> valueForKey:@"<#the key#>"]
+[<#dictionary#> valueForKey:@"<#the key#>"]

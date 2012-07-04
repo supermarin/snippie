@@ -9,36 +9,30 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - Tableview delegate
-
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
- 
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    &lt;#action after pressing on the cell#&gt;
-}
-
-
-#pragma mark - Tableview datasource
+	<string>#pragma mark - Tableview datasource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:&lt;#(UITableViewCellStyle)#&gt; reuseIdentifier:CellIdentifier];
-    }
-    [self configureCell:cell atIndexPath:indexPath];
-    return cell;
+static NSString *CellIdentifier = @"Cell";
+
+UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
+[self configureCell:cell atIndexPath:indexPath];
+return cell;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return &lt;#numberOfSections#&gt;;
+return &lt;#numberOfSections#&gt;;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return &lt;#numberOfRows#&gt;;
+return &lt;#numberOfRows#&gt;;
+}
+
+
+#pragma mark - Tableview delegate
+
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>EE946858-7D2A-4B72-A2A9-AAE18138BEF7</string>

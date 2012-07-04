@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>vfk</string>
+	<string>pibo</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[&lt;#dictionary#&gt; valueForKey:@"&lt;#the key#&gt;"]</string>
+	<string>@property(strong, nonatomic) IBOutlet &lt;#klass#&gt; *&lt;#property#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7C5D86F1-68BC-41B6-9C15-C5C0272D47AC</string>
+	<string>E646849B-FAB2-454E-B16A-BDC978A0D6A7</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Used to get a value for key from an object.</string>
+	<string>Strong, Nonatomic IBOutlet property declaration</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Value for key</string>
+	<string>Property IBOutlet custom class</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

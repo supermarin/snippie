@@ -3,21 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>vfk</string>
+	<string>jsonop</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[&lt;#dictionary#&gt; valueForKey:@"&lt;#the key#&gt;"]</string>
+	<string>    [[AFJSONRequestOperation JSONRequestOperationWithRequest:request 
+                                                     success:
+      ^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+        
+    } 
+                                                     failure:
+      ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+        
+    }] start];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7C5D86F1-68BC-41B6-9C15-C5C0272D47AC</string>
+	<string>EF81145F-6657-4CAD-877B-CAB56503FB49</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Used to get a value for key from an object.</string>
+	<string>AFNetworking JSON operation</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Value for key</string>
+	<string>AF JSON Operation</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

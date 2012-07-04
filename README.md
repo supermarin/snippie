@@ -39,6 +39,8 @@ However, if you want to clear the existing snippets, and use the fresh ones, you
 		
 * Delegate pragma mark - `delpragma`
 * Release object - `release`
+* Property Custom class - `pobj`
+* Property From dictionary - `pvfk`
 * View did dissapear - `vdd`
 * View Will Dissappear - `vwd`
 * Pragma Mark - `mark`
@@ -48,11 +50,18 @@ However, if you want to clear the existing snippets, and use the fresh ones, you
 * @Synthesizer with _prefix - `psynth`
 * Private Category - `privcat`
 * View Did Load - `vdl`
+* View Did Unload - `vdu`
 * Value for key - `vfk`
 * View Did Appear - `vda`
 * NSString with format - `swf`
+* Property String - `pstr`
+* Init With Dictionary - `initdict`
+* Property NSNumber - `pnum`
 * UIViewController pragma marks - `conpragmas`
 * Singleton - `singleton`
+* Property IBOutlet custom class - `pibo`
 * UITableView delegate and datasource default methods - `delDat`
+* AF JSON Operation - `jsonop`
+* Property NSArray - `parr`
 * Method declaration - `method`
 * Void method declaration - `void`

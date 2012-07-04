@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>vfk</string>
+	<string>pnum</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[&lt;#dictionary#&gt; valueForKey:@"&lt;#the key#&gt;"]</string>
+	<string>@property(strong, nonatomic) NSNumber *&lt;#property#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7C5D86F1-68BC-41B6-9C15-C5C0272D47AC</string>
+	<string>C1577379-4A1E-4E41-971D-C0CFA26487EB</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Used to get a value for key from an object.</string>
+	<string>Strong, Nonatomic NSNumber property declaration</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Value for key</string>
+	<string>Property NSNumber</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

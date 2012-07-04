@@ -3,21 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>vfk</string>
+	<string>vdu</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[&lt;#dictionary#&gt; valueForKey:@"&lt;#the key#&gt;"]</string>
+	<string>- (void)viewDidUnload {
+    [super viewDidUnload];
+    &lt;#code#&gt;
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7C5D86F1-68BC-41B6-9C15-C5C0272D47AC</string>
+	<string>7AD1FC7E-F72D-4CE6-933D-98FAD6A8C721</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Used to get a value for key from an object.</string>
+	<string>Quick ViewDidUnload declaration</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Value for key</string>
+	<string>View Did Unload</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
