@@ -47,6 +47,7 @@ However, if you want to clear the existing snippets, and use the fresh ones, you
 * Better Initializer - `init`
 * View Will Appear - `vwa`
 * NSLog - `log`
+* Factory method with Dictionary - `facdict`
 * @Synthesizer with _prefix - `psynth`
 * Private Category - `privcat`
 * View Did Load - `vdl`
@@ -59,6 +60,7 @@ However, if you want to clear the existing snippets, and use the fresh ones, you
 * Property NSNumber - `pnum`
 * UIViewController pragma marks - `conpragmas`
 * Singleton - `singleton`
+* Image named - `inamed`
 * Property IBOutlet custom class - `pibo`
 * UITableView delegate and datasource default methods - `delDat`
 * AF JSON Operation - `jsonop`

@@ -30,8 +30,6 @@ class ReadmeGenerator
 		FileUtils.rm_f @README_FILENAME
 	end
 
-
-
 	def readme_title
 		%{# Snippets backup-import & Cheatsheet generator
 #### For Xcode.

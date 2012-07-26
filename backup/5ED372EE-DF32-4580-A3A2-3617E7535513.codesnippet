@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>facdict</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    NSMutableArray *renameMe = [NSMutableArray new];
+    
+    for (NSDictionary *renameDict in [json valueForKey:@"&lt;#key#&gt;"])
+        [renameMe addObject:[[&lt;#klass#&gt; alloc] initWithDictionary:renameDict]];
+    
+    return renameMe;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5ED372EE-DF32-4580-A3A2-3617E7535513</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>For loop with a Mutable Array</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Factory method with Dictionary</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
