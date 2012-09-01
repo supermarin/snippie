@@ -3,32 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jsonop</string>
+	<string>imgimg</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    [[AFJSONRequestOperation JSONRequestOperationWithRequest:request 
-                                                     success:
-      ^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-        
-    } 
-                                                     failure:
-      ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-        
-    }] start];</string>
+	<string>[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"&lt;# image #&gt;"]]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EF81145F-6657-4CAD-877B-CAB56503FB49</string>
+	<string>07A189DF-4995-4BD5-9B69-2D65D0CCE4B9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>AFNetworking JSON operation</string>
+	<string>Gimme that image!</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>AF JSON Operation</string>
+	<string>Image View With Image Named</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

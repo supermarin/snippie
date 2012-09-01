@@ -1,8 +1,8 @@
-//Value for key
-//Used to get a value for key from an object.
+//Value For Key
+//Modern OBJC syntax for getting a value from dict
 //
 //Completion scopes: ["CodeExpression"]
 //
 Copy / Paste in Xcode:
 
-[<#dictionary#> valueForKey:@"<#the key#>"]
+<#dictionary#>[@"<#the key#>"]

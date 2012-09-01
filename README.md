@@ -38,12 +38,14 @@ However, if you want to clear the existing snippets, and use the fresh ones, you
 ## Cheat Sheet
 		
 * Delegate pragma mark - `delpragma`
+* Image View With Image Named - `imgimg`
 * Release object - `release`
 * Property Custom class - `pobj`
 * Property From dictionary - `pvfk`
 * View did dissapear - `vdd`
 * View Will Dissappear - `vwd`
 * Pragma Mark - `mark`
+* Private Pragma mark - `pmark`
 * Better Initializer - `init`
 * View Will Appear - `vwa`
 * NSLog - `log`
@@ -52,18 +54,19 @@ However, if you want to clear the existing snippets, and use the fresh ones, you
 * Private Category - `privcat`
 * View Did Load - `vdl`
 * View Did Unload - `vdu`
-* Value for key - `vfk`
+*  - ``
 * View Did Appear - `vda`
 * NSString with format - `swf`
 * Property String - `pstr`
 * Init With Dictionary - `initdict`
+* Value For Key - `vfk`
 * Property NSNumber - `pnum`
 * UIViewController pragma marks - `conpragmas`
 * Singleton - `singleton`
 * Image named - `inamed`
 * Property IBOutlet custom class - `pibo`
 * UITableView delegate and datasource default methods - `delDat`
-* AF JSON Operation - `jsonop`
 * Property NSArray - `parr`
 * Method declaration - `method`
+* JSON operation - `jsonop`
 * Void method declaration - `void`
