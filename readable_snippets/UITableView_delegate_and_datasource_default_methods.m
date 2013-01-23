@@ -8,25 +8,22 @@ Copy / Paste in Xcode:
 #pragma mark - Tableview datasource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-static NSString *CellIdentifier = @"Cell";
-
-UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-
-[self configureCell:cell atIndexPath:indexPath];
-return cell;
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    cell.<# property #> = <# model #>;
+    return cell;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-return <#numberOfSections#>;
+    return <#numberOfSections#>;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-return <#numberOfRows#>;
+    return <#numberOfRows#>;
 }
 
 
 #pragma mark - Tableview delegate
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-
-}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {}

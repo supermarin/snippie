@@ -12,20 +12,13 @@
 	<string>#pragma mark - Singleton
 static &lt;#self class#&gt; *singleton;
 
-- (id)initForSingleton {
-    self = [super init];
-    if (!self) return nil;
++ (instancetype)instance {
+    static dispatch_once_t singletonToken;
+    dispatch_once(&amp;singletonToken, ^{
+        singleton = [[self alloc] init];
+    });
     
-    return self;
-}
-
-+ (id)instance {
-    @synchronized(self) {
-        if (singleton) return singleton;
-        
-        singleton = [[self alloc] initForSingleton];
-        return singleton;
-    }
+    return singleton;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>DFE3B3EA-F43B-4EAF-9164-216F1693EFCA</string>

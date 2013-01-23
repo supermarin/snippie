@@ -7,7 +7,7 @@ Copy / Paste in Xcode:
 
     NSMutableArray *renameMe = [NSMutableArray new];
     
-    for (NSDictionary *renameDict in [json valueForKey:@"<#key#>"])
+    for (NSDictionary *renameDict in json[@"<#key#>"])
         [renameMe addObject:[[<#klass#> alloc] initWithDictionary:renameDict]];
     
     return renameMe;

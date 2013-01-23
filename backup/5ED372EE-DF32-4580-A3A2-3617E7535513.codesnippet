@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>    NSMutableArray *renameMe = [NSMutableArray new];
     
-    for (NSDictionary *renameDict in [json valueForKey:@"&lt;#key#&gt;"])
+    for (NSDictionary *renameDict in json[@"&lt;#key#&gt;"])
         [renameMe addObject:[[&lt;#klass#&gt; alloc] initWithDictionary:renameDict]];
     
     return renameMe;</string>

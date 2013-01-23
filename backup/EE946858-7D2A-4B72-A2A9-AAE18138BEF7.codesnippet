@@ -12,28 +12,26 @@
 	<string>#pragma mark - Tableview datasource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-static NSString *CellIdentifier = @"Cell";
-
-UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-
-[self configureCell:cell atIndexPath:indexPath];
-return cell;
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    cell.&lt;# property #&gt; = &lt;# model #&gt;;
+    return cell;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-return &lt;#numberOfSections#&gt;;
+    return &lt;#numberOfSections#&gt;;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-return &lt;#numberOfRows#&gt;;
+    return &lt;#numberOfRows#&gt;;
 }
 
 
 #pragma mark - Tableview delegate
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-
-}</string>
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>EE946858-7D2A-4B72-A2A9-AAE18138BEF7</string>
 	<key>IDECodeSnippetLanguage</key>

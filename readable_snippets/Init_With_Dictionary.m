@@ -14,6 +14,12 @@ Copy / Paste in Xcode:
     return self;
 }
 
+- (NSDictionary *)toDictionary {
+    NSMutableDictionary *dict = [NSMutableDictionary new];
+    
+    return dict;
+}
+
 #pragma mark - Private
 
 - (void)unpackFromDictionary:(NSDictionary *)dictionary {

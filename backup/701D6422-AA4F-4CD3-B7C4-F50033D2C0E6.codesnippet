@@ -3,40 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>initdict</string>
+	<string>pview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (id)initWithDictionary:(NSDictionary *)dict {
-    self = [super init];
-    if (!self) return nil;
-    
-    [self unpackFromDictionary:dict];
-    
-    return self;
-}
-
-- (NSDictionary *)toDictionary {
-    NSMutableDictionary *dict = [NSMutableDictionary new];
-    
-    return dict;
-}
-
-#pragma mark - Private
-
-- (void)unpackFromDictionary:(NSDictionary *)dictionary {
-    
-}</string>
+	<string>#pragma mark - View Lifecycle</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A50A9B42-6886-4A72-ADB9-80946A739CE8</string>
+	<string>701D6422-AA4F-4CD3-B7C4-F50033D2C0E6</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Initializer and Unpack method</string>
+	<string>Pragma mark for View Lifecycle</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init With Dictionary</string>
+	<string>Pragma - View Lifecycle</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
