@@ -5,4 +5,4 @@
 //
 Copy / Paste in Xcode:
 
-@property(strong, nonatomic) NSArray *<#property#>;
+@property (strong, nonatomic) NSArray *<#property#>;

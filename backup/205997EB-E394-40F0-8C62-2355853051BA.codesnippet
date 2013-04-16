@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>self.&lt;#property#&gt; = [dictionary valueForKey:@"&lt;#key#&gt;"];</string>
+	<string>self.&lt;#property#&gt; = dictionary[@"&lt;#key#&gt;"];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>205997EB-E394-40F0-8C62-2355853051BA</string>
 	<key>IDECodeSnippetLanguage</key>

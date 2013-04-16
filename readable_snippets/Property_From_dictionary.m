@@ -5,4 +5,4 @@
 //
 Copy / Paste in Xcode:
 
-self.<#property#> = [dictionary valueForKey:@"<#key#>"];
+self.<#property#> = dictionary[@"<#key#>"];

@@ -5,4 +5,4 @@
 //
 Copy / Paste in Xcode:
 
-@property(strong, nonatomic) <#class#>* <#property#>;
+@property (strong, nonatomic) <#class#> *<#property#>;

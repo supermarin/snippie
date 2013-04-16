@@ -5,4 +5,4 @@
 //
 Copy / Paste in Xcode:
 
-@property(strong, nonatomic) NSNumber *<#property#>;
+@property (strong, nonatomic) NSNumber *<#property#>;
