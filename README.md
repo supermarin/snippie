@@ -8,7 +8,7 @@ It's created every time you back up your snippets and push to git.
 ### Installation
 Fork the repository, to be able to export your own snippets and cheat-sheet. <br>
 You can save the repository wherever you want. <br>
-`$ git clone git@github.com:mneorr/xcode-snippets-manager.git xcode-snippets` <br>
+`$ git clone https://github.com/mneorr/snippie.git xcode-snippets` <br>
 `$ cd xcode-snippets` <br>
 `$ bundle install`
 
