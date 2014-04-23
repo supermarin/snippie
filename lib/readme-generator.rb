@@ -14,7 +14,7 @@ class ReadmeGenerator
 	end
 	
 	def formatted_snippets
-		@snippets.map do |snippet|
+		@snippets.sort_by!(&:title).map do |snippet|
 			[ "* #{snippet.title} - `#{snippet.shortcut}`" ]
 		end
 	end
