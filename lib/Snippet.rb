@@ -35,5 +35,9 @@ class Snippet
   def completion_scopes
     value_for_key "IDECodeSnippetCompletionScopes"
   end
+
+  def language
+    (value_for_key "IDECodeSnippetLanguage").gsub "Xcode.SourceCodeLanguage.", ""
+  end
   
 end
